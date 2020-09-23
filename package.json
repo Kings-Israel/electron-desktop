@@ -1,0 +1,38 @@
+{
+  "name": "master-electron",
+  "version": "1.0.0",
+  "description": "Master Electron Course Code",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "reset": "git reset --hard",
+    "win": "electron-builder -w",
+    "build": "electron-builder -wl"
+  },
+  "build": {
+      "appId": "com.readit",
+      "win": {
+
+      },
+      "linux": {
+          "category": "Network"
+      }
+  },
+  "repository": "https://github.com/stackacademytv/master-electron",
+  "keywords": [
+    "Electron",
+    "Master Electron",
+    "demo"
+  ],
+  "author": "GitHub, Stackacademytv",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^5.0.10",
+    "electron-builder": "^22.8.0",
+    "nodemon": "^1.19.2"
+  },
+  "dependencies": {
+    "electron-window-state": "^5.0.3"
+  }
+}
